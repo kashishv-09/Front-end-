@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+        .head {
+            padding: 0%;
+        }
+
+        .head1 {
+            background-color: rgb(202, 80, 35);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .btn {
+            background-color: rgb(202, 80, 35);
+            color: wheat
+        }
+
+        .bg {
+            background-image: url(https://s1.1zoom.me/big0/930/Buns_Cookies_Pound_Cake_Pastry_614266_1280x853.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .foot {
+            background-color: rgb(41, 41, 52);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .foot>.btlink {
+            display: inline;
+            margin-top: 70px;
+            margin-right: 180px;
+        }
+
+        .foot>.btlink>.but>.btn {
+            background-color: rgb(41, 41, 52);
+            color: white;
+
+        }
+
+        .foot>.btlink>.social>.btn {
+            background-color: rgb(41, 41, 52);
+            color: white;
+            margin-top: 120px;
+            justify-content: space-between;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding-left: 0px;
+            margin-left: 0px;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            padding-left: 220px;
+            text-align: center;
+        }
+        /* Dropdown Button */
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color:rgb(202, 80, 35);
+  color: wheat;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:grey;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(246, 132, 90);}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+    </style>
+</head>
+<header>
+    <div class="head">
+        <div style="background-color:black;text-align:center;color:wheat;padding-bottom:5px ;padding-top:14px ;">
+            <p>WhatsApp 9822 3924 for Same-Day Self Pick-Up!<br>
+                Free delivery for orders above $120 | $12 delivery fee for orders below $120</p>
+        </div>
+        <div class="head1">
+            <img src="https://www.lalevain.com/wp-content/uploads/2021/12/LLV-WHITE-300x116.png" alt="">
+            <div class="text-center">
+                <div class="links">
+                    <a href="about.html"><button type="button" class="btn btn-lg">About</button></a>
+                    <a href="shopnow.html"><button type="button" class="btn btn-lg">Shop Now</button></a>
+                    <a href="corporateorders.html"><button type="button" class="btn btn-lg">Corporate orders</button></a>
+                    <a href="contact.html"><button type="button" class="btn btn-lg">Contact</button></a>
+                    <button class="btn btn-lg dropdown-toggle mr-4" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Others</button>
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Others</button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">Dine In Menu</a>
+                              <a href="#">Latest Update</a>
+                              <a href="#">Media</a>
+                              <a href="#">Product Care Guide</a>
+                            </div>
+                          </div>
+                        <button class="btn btn-lg"><i class="fa fa-search"></i></button>
+                        <button class="btn btn-lg"><i class="fa fa-user"></i></button>
+                    </div>
+                    <script>
+                        /* When the user clicks on the button, 
+                        toggle between hiding and showing the dropdown content */
+                        function myFunction() {
+                          document.getElementById("myDropdown").classList.toggle("show");
+                        }
+                        
+                        // Close the dropdown if the user clicks outside of it
+                        window.onclick = function(event) {
+                          if (!event.target.matches('.dropbtn')) {
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+                        </script>
+                    <button class="btn btn-lg"><i class="fa fa-search"></i></button>
+                    <button class="btn btn-lg"><i class="fa fa-user"></i></button>
+                </div>
+            </div>
+</header>
+<main>
+    <div class="container">
+        <img style="width:1520px;height:350px;"
+            src="https://c4.wallpaperflare.com/wallpaper/230/985/188/assortment-bake-bakery-bread-wallpaper-preview.jpg"
+            alt="">
+        <div class="centered">Get To Us</div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col" style="padding-left:150px;">
+            <center>
+                <h1 style="color:orangered">GETTING HERE</h1><br>
+            </center>
+            <i class="fa fa-clock-o" style="font-size:24px;color: orangered;"> OPERATING HOURS</i>
+            <p>Open: Tuesdays - Sundays & Public Holidays (8AM - 6PM)<br>
+                Closed: Mondays*</p>
+            <p>*If a Public Holiday falls on a Monday,<br> we will open on Monday & be closed on Tuesday.</p><br>
+            <i class="fa fa-arrow-circle-right" style="font-size:24px;color: orangered;"> DIRECTION</i>
+            <p>Bus: 13, 67, 133, 141, 145<br>
+                Nearest Bus Stops: Bef Kallang Bahru, Aft Kallang Bahru<br>
+                Nearest MRTs: Bendemeer, Lavender</p><br>
+            <i class="fa fa-map-marker" style="font-size:24px;color: orangered;"> VISIT US</i>
+            <p>23 Hamilton Road, Singapore 209193<br><br></p>
+        </div>
+        <div class="col">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7977.546234024592!2d103.861037!3d1.311508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1993dc1b9705%3A0xe5f58b80eb87374b!2sLa%20Levain!5e0!3m2!1sen!2sin!4v1697641006860!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+                <center>
+                    <h4>Follow US</h4>
+                    <div class="social">
+                        <button class="btn btn-sm"><i class="fa fa-pinterest" aria-hidden="true"></i></button>
+                <button class="btn btn-sm"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                <button class="btn btn-sm"><i class="fa fa-whatsapp" aria-hidden="true"></i></i></button>
+                <button class="btn btn-sm"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                <button class="btn btn-sm"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                </center>
+                    </div>   
+        </div>
+    </div>
+    <br><br>
+    <center>
+        <h1 style="color:orangered">CONTACT US</h1>
+    </center>
+    <br>
+    <div class="row">
+        <div class="col" style="padding-left:400px;">
+            <i class="fa fa-envelope" style="font-size:20px"> Email Us</i><br>
+        <p>         hello@lalevain.com</p>
+        </div>
+        <div class="col">
+            <i class="fa fa-phone" style="font-size:20px"> Call Us</i>
+        <p>        +65 9822 3924</p>
+        </div>
+    </div>
+    <div class="conform" style="padding-left:200px;">
+        <form action="index.html">
+            <label for="">Name</label>
+            <input style="text-align: center;height:35px;width:1000px;" placeholder="Enter Your Name Here"
+                required>
+            <br><br>
+            <label for="">Email</label>
+            <input style="text-align: center;height:35px;width:1000px;" placeholder="Email Address"
+                required>
+                <br><br>
+            <label for="">Message</label>
+                    <textarea id="w3review" name="w3review" rows="4" cols="130">Your Message</textarea>
+                    <br>
+                    <input type="checkbox" id="submit" name="submit" value="agree">
+  <label for="submit"> Sign up to our newsletter?</label><br>
+                    <center>
+                        <button type="button" class="btn btn-lg">Submit</button>
+                    </center>
+    </div>
+</main>
+<footer>
+    <div class="bg">
+        <center>
+            <div style="padding-top:100px;padding-bottom:70px">
+                <h3 style="color:white"><b>Be the first to know about our latest bakes!</b></h3><br>
+                <form action="index.html">
+                    <label for=""></label>
+                    <input style="text-align: center;height:40px;width:400px;" placeholder="Enter Your Email Here"
+                        required>
+                    <br><br>
+                    <button type="button" class="btn btn-lg">Subscribe</button>
+            </div>
+        </center>
+    </div>
+    <div class="foot">
+        <div class="address" style="margin-left:95px;padding-top:20px;">
+            <br>
+            <img style="height:55px;margin-left:95px;" src="https://www.lalevain.com/wp-content/uploads/2021/08/LLV-WHITE-300x116.png" alt="">
+            <br><br>
+            <div style="margin-left:100px;">
+                <p style="font-size: small;">23 Hamilton Road, Singapore 209193<br>
+                    Tuesdays - Sundays (8:00AM - 6:00PM)<br><i class="fa fa-envelope"></i> hello@lalevain.com <br>Contact:
+                    +65 9822 3924</p>
+                <br>
+                <p><b>© 2023 La Levain. Powered by La Levain.</b></p>
+                <br><br>
+            </div>
+        </div>
+        <div class="btlink">
+            <div class="but">
+                <a href="main.html"><button type="button" class="btn btn-sm">Home</button></a>
+                <a href="about.html"><button type="button" class="btn btn-sm">About</button></a>
+                <a href="shopnow.html"><button type="button" class="btn btn-sm">Shop</button></a>
+                <a href="contact.html"><button type="button" class="btn btn-sm">Contact US</button></a>
+                <a href="corporateorders.html"><button type="button" class="btn btn-sm">Corporate Orders</button></a>
+            </div>
+             <div class="social">
+            <button class="btn btn-sm"><i class="fa fa-pinterest" aria-hidden="true"></i></button>
+            <button class="btn btn-sm"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+            <button class="btn btn-sm"><i class="fa fa-whatsapp" aria-hidden="true"></i></i></button>
+            <button class="btn btn-sm"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+            <button class="btn btn-sm"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+        </div>
+        </div>
+       
+    </div>
+</footer>
+
+</html>
